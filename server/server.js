@@ -21,6 +21,11 @@ app.post('/usuario/:id', (req, res) => {
   });
 });
 
+app.delete('/usuario', (req, res) => {
+
+  res.send('borrar usuario');
+})
+
 
 
 app.post('/usuario', (req, res) => {
