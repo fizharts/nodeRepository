@@ -43,8 +43,14 @@ if (body.nombre === undefined) {
 }
 
 });
-app.put('/usuario', (req, res) => {
-  res.send('Actualizar usuario');
+app.put('/usuario/:id', (req, res) => {
+    let id = req.params.id;
+
+    res.json({
+      id
+    });
+
+
 });
 
 app.listen(process.env.PORT,() => {
