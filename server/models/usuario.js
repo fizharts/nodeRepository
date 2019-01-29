@@ -52,6 +52,7 @@ let rolesValidos = {
         
         return userObject;
     }
+    //sdfsdf
 
     usuarioSchema.plugin( uniqueValidator, {
       message:'{PATH} debe de ser unico'
